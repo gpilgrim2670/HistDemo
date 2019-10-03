@@ -1,5 +1,7 @@
 #' main server of app
 #'
+#' @import shiny
+#'
 #' @param input shiny input
 #' @param output shiny output
 #' @param session shiny session
