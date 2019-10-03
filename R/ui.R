@@ -1,5 +1,5 @@
 #' main app ui
-#' @import shiny
+#'
 #'
 #' @return shiny ui
 #' @export
