@@ -11,7 +11,7 @@
 
 app_server <- function(input, output, session) {
 
-    output$distPlot <- renderPlot({
+    output$distPlot <- shiny::renderPlot({
 
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]

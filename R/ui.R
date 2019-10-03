@@ -7,15 +7,15 @@
 app_ui <- function(){
 
 # Define UI for application that draws a histogram
-fluidPage(
+shiny::fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    shiny::titlePanel("Old Faithful Geyser Data"),
 
     # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
+    shiny::sidebarLayout(
+        shiny::sidebarPanel(
+            shiny::sliderInput("bins",
                         "Number of bins:",
                         min = 1,
                         max = 50,
@@ -23,8 +23,8 @@ fluidPage(
         ),
 
         # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
+        shiny::mainPanel(
+            shiny::plotOutput("distPlot")
         )
     )
 )
