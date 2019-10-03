@@ -1,10 +1,4 @@
-#` server
-#`
 #' main server of app
-#'
-#' @author Greg Pilgrim
-#'
-#' @import shiny
 #'
 #' @param input shiny input
 #' @param output shiny output
@@ -13,10 +7,7 @@
 #' @return shiny server
 #' @export
 
-library(shiny)
-
-# Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+app_server <- function(input, output, session) {
 
     output$distPlot <- renderPlot({
 
@@ -29,4 +20,4 @@ shinyServer(function(input, output) {
 
     })
 
-})
+}

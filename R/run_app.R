@@ -1,3 +1,12 @@
+#' run_app
+#'
+#' @param port The TCP port that the application should listen on
+#' if NULL, a random one is assigned
+#'
+#' @return NA
+#' @export
+#'
+
 run_app <- function(port = NULL) {
 
   if (is.null(port)) {

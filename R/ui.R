@@ -1,17 +1,13 @@
-#' ui
-#'
 #' main app ui
 #'
-#' @author Greg Pilgrim
 #'
 #' @return shiny ui
 #' @export
 #'
-
-library(shiny)
+app_ui <- function(){
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
+fluidPage(
 
     # Application title
     titlePanel("Old Faithful Geyser Data"),
@@ -31,4 +27,5 @@ shinyUI(fluidPage(
             plotOutput("distPlot")
         )
     )
-))
+)
+}
